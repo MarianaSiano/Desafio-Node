@@ -1,6 +1,20 @@
 {
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "555014",
+    "database": "desafio-node",
+    "synchronize": true,
+    "logging": true,
+    "entities": [
+        "src/entities/*.ts"
+    ],
+    "migrations": [
+        "src/migrations/*.ts"
+    ],
     "cli": {
-        "migrationsDir": "./src/database/migrations",
-        "entitiesDir":"./src/models"
+        "entitiesDir": "src/entities",
+        "migrationsDir": "src/migrations"
     }
 }
